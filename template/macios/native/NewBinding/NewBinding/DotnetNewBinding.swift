@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import Usercentrics
 
 @objc(DotnetNewBinding)
 public class DotnetNewBinding : NSObject
@@ -13,6 +14,7 @@ public class DotnetNewBinding : NSObject
 
     @objc
     public static func getString(myString: String) -> String {
+        UsercentricsOptions(settingsId: "")
         return myString  + " from swift!"
     }
 
