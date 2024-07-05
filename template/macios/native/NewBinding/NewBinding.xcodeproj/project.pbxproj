@@ -7,11 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B1DF89A2C37F676005531C7 /* Usercentrics.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1DF8992C37F676005531C7 /* Usercentrics.xcframework */; };
+		6B1DF89B2C37F676005531C7 /* Usercentrics.xcframework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 6B1DF8992C37F676005531C7 /* Usercentrics.xcframework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		83E34F572C21CB2B008AA950 /* NewBinding.h in Headers */ = {isa = PBXBuildFile; fileRef = 83E34F562C21CB2B008AA950 /* NewBinding.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83E34F5E2C21CC53008AA950 /* DotnetNewBinding.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E34F5D2C21CC53008AA950 /* DotnetNewBinding.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		6B1DF89C2C37F676005531C7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				6B1DF89B2C37F676005531C7 /* Usercentrics.xcframework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		6B1DF8992C37F676005531C7 /* Usercentrics.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = Usercentrics.xcframework; path = "../../../../../../../Downloads/Usercentrics-2-3/Usercentrics.xcframework"; sourceTree = "<group>"; };
 		83E34F532C21CB2B008AA950 /* NewBinding.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NewBinding.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		83E34F562C21CB2B008AA950 /* NewBinding.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NewBinding.h; sourceTree = "<group>"; };
 		83E34F5D2C21CC53008AA950 /* DotnetNewBinding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DotnetNewBinding.swift; sourceTree = "<group>"; };
@@ -22,17 +39,27 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6B1DF89A2C37F676005531C7 /* Usercentrics.xcframework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6B1DF8982C37F675005531C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6B1DF8992C37F676005531C7 /* Usercentrics.xcframework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		83E34F492C21CB2B008AA950 = {
 			isa = PBXGroup;
 			children = (
 				83E34F552C21CB2B008AA950 /* NewBinding */,
 				83E34F542C21CB2B008AA950 /* Products */,
+				6B1DF8982C37F675005531C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -75,12 +102,15 @@
 				83E34F4F2C21CB2B008AA950 /* Sources */,
 				83E34F502C21CB2B008AA950 /* Frameworks */,
 				83E34F512C21CB2B008AA950 /* Resources */,
+				6B1DF89C2C37F676005531C7 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = NewBinding;
+			packageProductDependencies = (
+			);
 			productName = NewBinding;
 			productReference = 83E34F532C21CB2B008AA950 /* NewBinding.framework */;
 			productType = "com.apple.product-type.framework";
@@ -109,6 +139,8 @@
 				Base,
 			);
 			mainGroup = 83E34F492C21CB2B008AA950;
+			packageReferences = (
+			);
 			productRefGroup = 83E34F542C21CB2B008AA950 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
